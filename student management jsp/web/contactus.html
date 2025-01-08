@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Student Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; /* Light grey background */
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #6f42c1; /* Violet color for header */
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 10px 30px;
+        }
+
+        .hero h1 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        a:hover {
+            color: #e1baff; /* Light violet on hover */
+        }
+
+        .contact-section {
+            padding: 60px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #6f42c1; /* Violet color for headings */
+        }
+
+        .contact-info {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-info img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contact-form {
+            margin: 20px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .btn-secondary {
+            color: white;
+            background-color: #6f42c1; /* Violet button color */
+            border-color: #6f42c1;
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a2d9c; /* Darker violet on hover */
+            border-color: #5a2d9c;
+        }
+
+        footer {
+            background-color: #6f42c1; /* Violet footer */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 40px 20px;
+            }
+
+            .contact-section h2 {
+                font-size: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        main {
+            background-color: #f0f2f5;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Welcome to the Student Management System</h1>
+            <a href="index.html">Home</a> / <a href="contact.html">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Section -->
+        <div class="container contact-section">
+            <div class="row justify-content-center contact">
+                <div class="col-md-6 contact-form">
+                    <h2>Contact Us</h2>
+                    <form action="contact.jsp" method="post">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-5 d-none d-md-block contact-info">
+                    <img src="https://c0.wallpaperflare.com/preview/960/830/338/chart-graph-business-finance.jpg" alt="Contact Image">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2024 Student Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Student Management System</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; /* Light background */
+            color: #333;
+            margin: 0;
+        }
+
+        header {
+            background-color: #6a1b9a; /* Violet background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        header a:hover {
+            color: #ff80ab; /* Light pink color on hover */
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 50px 0;
+            background-color: white;
+            border-radius: 8px;
+            margin-top: -10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #6a1b9a; /* Violet color */
+        }
+
+        .about-info p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6; /* Better line spacing for readability */
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 50px 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            color: #6a1b9a;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .team-member {
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member h4 {
+            font-size: 1.25rem;
+            color: #6a1b9a;
+            font-weight: 600;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* History Section */
+        .history-section {
+            padding: 50px 0;
+            background-color: white;
+            border-radius: 8px;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .history-section h2 {
+            color: #6a1b9a;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .history-section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Main Content */
+        main {
+            background-color: #f0f2f5;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .about-section h2 {
+                font-size: 2rem;
+            }
+
+            .team-section h2 {
+                font-size: 2rem;
+            }
+
+            .team-member img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .history-section h2 {
+                font-size: 2rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Student Management System</h1>
+        <a href="index.html">Home</a> / <a href="about.html">About</a>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <div class="about-info">
+                <p>At Student Management System, our mission is to provide an efficient and user-friendly platform that
+                    enables educational institutions to manage their student data effectively.</p>
+                <p>Our vision is to revolutionize the way educational data is handled, making it accessible, organized,
+                    and secure for institutions around the globe.</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 team-member">
+                        <img src="team1.jpg" alt="Team Member 1">
+                        <h4>Kl Rahul</h4>
+                        <p>CEO & Founder</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 team-member">
+                        <img src="team2.jpg" alt="Team Member 2">
+                        <h4>Smriti Mandhana</h4>
+                        <p>Chief Technology Officer</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 team-member">
+                        <img src="team3.jpg" alt="Team Member 3">
+                        <h4>Tom Holland</h4>
+                        <p>Chief Marketing Officer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="history-section">
+            <div class="container">
+                <h2>Our History</h2>
+                <div class="about-info">
+                    <p>Student Management System was founded in 2020 with the aim of simplifying the educational process by creating a centralized platform for managing student data.</p>
+                    <p>Over the years, we have grown into a leading provider of educational software, serving institutions worldwide with cutting-edge technology and exceptional customer support.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Student Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

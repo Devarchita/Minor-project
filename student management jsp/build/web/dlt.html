@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .forgot-password-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .forgot-password-container h2 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .btn-danger {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .reset-password-form {
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="forgot-password-container">
+        <h2>Delete Account</h2>
+        <form id="deleteAccountForm" action="dlt.jsp" method="POST">
+            <div class="form-group">
+                <label for="email">Enter your email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Delete Account</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/2425515.jpg'); 
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #6a1b9a; 
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            backdrop-filter: blur(12px);
+        }
+
+        header .hero h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #ff80ab; 
+        }
+
+        main {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            height: 100px;
+            width: 180px;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=email],
+        input[type=date] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        fieldset {
+            margin-bottom: 12px;
+            padding: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #6a1b9a;
+        }
+
+        input[type=radio] {
+            margin-right: 10px;
+        }
+
+        .registerbtn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #6a1b9a, #ff80ab);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .registerbtn:hover {
+            background: linear-gradient(135deg, #4a148c, #ff80ab);
+        }
+
+        .sign-in {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .sign-in a {
+            color: #6a1b9a;
+            text-decoration: none;
+        }
+
+        .sign-in a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header .hero h1 {
+                font-size: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Welcome to the Student Management System</h1>
+            <a href="index.html">HOME</a> / <a href="log.html">LOGIN</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <img src="https://png.pngtree.com/png-vector/20221224/ourmid/pngtree-register-now-banner-design-transparent-background-png-image_6535781.png" alt="Register Now">
+            <form name="f" method="post" action="reg.jsp">
+                <label for="name"><b>Full Name:</b></label>
+                <input type="text" placeholder="Full Name" name="name" id="name" required>
+
+                <label for="email"><b>Email:</b></label>
+                <input type="email" placeholder="Email Id" name="email" id="email" required>
+
+                <label for="pwd"><b>Password:</b></label>
+                <input type="password" placeholder="Password" name="password" id="pwd" required>
+
+                <fieldset>
+                    <legend><b>Gender:</b></legend>
+                    <input type="radio" id="Male" name="gender" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="gender" value="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" id="Other" name="gender" value="Other">
+                    <label for="Other">Other</label>
+                </fieldset>
+
+                <label for="date"><b>Date of Birth:</b></label>
+                <input type="date" name="date" id="date" required>
+
+                <button type="submit" class="registerbtn">Register</button>
+            </form>
+            <div class="sign-in">
+                <p>Already have an account? <a href="log.html">Sign In</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
